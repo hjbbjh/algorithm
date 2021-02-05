@@ -84,39 +84,39 @@ public class Question1 {
     }
 
     private static void afterOrderReadNotDiGui1(Node head) {
-        if(null != head){
+        if (null != head) {
             Stack<Node> stack1 = new Stack<Node>();
             Stack<Node> stack2 = new Stack<Node>();
             stack1.add(head);
-            while (!stack1.isEmpty()){
+            while (!stack1.isEmpty()) {
                 Node top = stack1.pop();
-                if(null != top.left) {
+                if (null != top.left) {
                     stack1.add(top.left);
                 }
-                if(null != top.right){
+                if (null != top.right) {
                     stack1.add(top.right);
                 }
                 stack2.add(top);
             }
-            while (!stack2.isEmpty()){
+            while (!stack2.isEmpty()) {
                 System.out.println(stack2.pop().value);
             }
         }
     }
 
     private static void afterOrderReadNotDiGui2(Node head) {
-        if(null != head){
+        if (null != head) {
             Stack<Node> stack = new Stack<Node>();
             stack.add(head);
             Node h = head;
             Node c = null;
-            while (!stack.isEmpty()){
+            while (!stack.isEmpty()) {
                 c = stack.peek();
-                if(null != c.left && c.left != h && c.right != h){
+                if (null != c.left && c.left != h && c.right != h) {
                     stack.add(c.left);
-                }else if(null != c.right && c.right != h){
+                } else if (null != c.right && c.right != h) {
                     stack.add(c.right);
-                }else {
+                } else {
                     System.out.println(stack.pop().value);
                     h = c;
                 }
