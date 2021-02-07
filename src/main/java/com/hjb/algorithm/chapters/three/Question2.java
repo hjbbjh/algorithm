@@ -31,7 +31,7 @@ public class Question2 {
             System.out.println(nodes[0].value);
         }
         printLeafNodeNotInMap(head, nodeMap, 0);
-        //倒序打印又边界（顺时针）
+        //倒序打印又边界（逆时针）
         for (int i = nodeMap.length - 1; i > -1; i--) {
             if (nodeMap[i][0] != nodeMap[i][1]) {
                 System.out.println(nodeMap[i][1].value);
@@ -87,6 +87,12 @@ public class Question2 {
             return level;
         }
         return Math.max(getHeight(head.left, level + 1), getHeight(head.right, level + 1));
+    }
+
+
+    public static void printEdge2(Node head) {
+        // TODO: 2021/2/7
+        System.out.println("tmd,题目都没看懂！");
     }
 
     public static void main(String[] args) {
