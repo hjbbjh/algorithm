@@ -1,4 +1,4 @@
-package com.hjb.algorithm.chapters.three;
+package com.hjb.algorithm.zuoshen.chapters.three;
 
 /**
  * ClassName: Question3

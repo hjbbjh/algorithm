@@ -1,4 +1,4 @@
-package com.hjb.algorithm.chapters.three;
+package com.hjb.algorithm.zuoshen.chapters.three;
 
 import java.util.LinkedList;
 import java.util.Queue;
